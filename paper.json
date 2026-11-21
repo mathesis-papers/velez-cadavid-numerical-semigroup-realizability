@@ -28,9 +28,9 @@
         "name": "Wenlin Zhang"
       }
     ],
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.24404957",
     "current_version": 2,
-    "doi": null,
+    "doi": "10.5281/zenodo.24404958",
     "lean_source": {
       "revision": "8acf7efa41af7fc9ddbbd39571e7ef73462f4509",
       "url": "https://github.com/the-omega-institute/trureturing/blob/8acf7efa41af7fc9ddbbd39571e7ef73462f4509/D5/S3/Arith/Additive/NumericalSemigroupRealizability.lean"

@@ -5,13 +5,15 @@
 We answer the realizability question of Vélez Caicedo and Cadavid (§5, p. 17, second paragraph of arXiv:2611.14316v1) by reflecting semigroup generators about a prescribed maximum jump: every numerical semigroup T is realizable, and a positive integer M is an admissible maximum exactly when M belongs to T and every minimal generator h satisfies h<2M and 2M-h belongs to T. The construction gives the unique inclusion-minimal jump set at each admissible maximum and realizes every sufficiently large maximum. Using the source's spectral formulas, we also recover the semigroup from two global dimensions and M-2 restricted dimensions when M>=2. For prime maxima, eventual dimensions at proper-divisor moduli alone need not distinguish semigroups.
 
 - PDF: [frozen public file](paper.pdf)
+- DOI: [https://doi.org/10.5281/zenodo.24404958](https://doi.org/10.5281/zenodo.24404958)
+- Concept DOI: [https://doi.org/10.5281/zenodo.24404957](https://doi.org/10.5281/zenodo.24404957)
 - License: CC-BY-4.0
 - Version: 2
 - Mathesis record: [velez-cadavid-numerical-semigroup-realizability](https://mathesis-omega-research.apps.chrono-ai.fun/papers/velez-cadavid-numerical-semigroup-realizability?version=2)
 
 ## How to cite
 
-Haobo Ma, Wenlin Zhang (2026). Vélez Caicedo and Cadavid's numerical-semigroup realizability question: prescribed maxima and reduced spectral data. Mathesis, version 2. https://mathesis-omega-research.apps.chrono-ai.fun/papers/velez-cadavid-numerical-semigroup-realizability?version=2
+Haobo Ma, Wenlin Zhang (2026). Vélez Caicedo and Cadavid's numerical-semigroup realizability question: prescribed maxima and reduced spectral data. Mathesis, version 2. https://doi.org/10.5281/zenodo.24404958
 
 ## Statement progress
 
