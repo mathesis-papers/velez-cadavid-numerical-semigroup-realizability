@@ -1,0 +1,244 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:velez-cadavid-numerical-semigroup-realizability:2:s1",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "8acf7efa41af7fc9ddbbd39571e7ef73462f4509",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/8acf7efa41af7fc9ddbbd39571e7ef73462f4509/D5/S3/Arith/Additive/NumericalSemigroupRealizability.lean"
+      },
+      "lineage": "collected:velez-cadavid-numerical-semigroup-realizability:s1",
+      "macros": {
+        "\\N": "\\mathbb N",
+        "\\gen": "\\langle #1\\rangle"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "velez-cadavid-numerical-semigroup-realizability",
+      "scope": "in_scope",
+      "statement": "The indecomposable elements form the unique minimal positive generating\nset $H$ of $T$. This set is finite, nonempty, has $\\gcd H=1$, and\n\\[\n \\max H\\le\\max\\{m,c+m-1\\}.\n\\]",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Vélez Caicedo and Cadavid's numerical-semigroup realizability question: prescribed maxima and reduced spectral data",
+      "toolchain": null,
+      "version": 2,
+      "work": "velez-cadavid-numerical-semigroup-realizability"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:velez-cadavid-numerical-semigroup-realizability:2:s2",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "8acf7efa41af7fc9ddbbd39571e7ef73462f4509",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/8acf7efa41af7fc9ddbbd39571e7ef73462f4509/D5/S3/Arith/Additive/NumericalSemigroupRealizability.lean"
+      },
+      "lineage": "collected:velez-cadavid-numerical-semigroup-realizability:s2",
+      "macros": {
+        "\\N": "\\mathbb N",
+        "\\gen": "\\langle #1\\rangle"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "velez-cadavid-numerical-semigroup-realizability",
+      "scope": "in_scope",
+      "statement": "Let $H$ be the minimal positive generating set of a numerical semigroup\n$T$. A positive integer $M$ is admissible for $T$ if and only if\n\\begin{equation}\n M\\in T,\\qquad h<2M\\ \\hbox{and}\\ 2M-h\\in T\\quad(h\\in H).\n\\end{equation}\nWhen these conditions hold, the set\n\\begin{equation}\n S_{\\min}(T,M)=\\{M\\}\\cup\\{|M-h|:h\\in H,\\ h\\ne M\\}\n\\end{equation}\nrealizes $T$, has gcd one, and is contained in every jump set realizing\n$T$ with maximum $M$. It is therefore the unique inclusion-minimal such\nset and has the smallest possible number of jumps.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Vélez Caicedo and Cadavid's numerical-semigroup realizability question: prescribed maxima and reduced spectral data",
+      "toolchain": null,
+      "version": 2,
+      "work": "velez-cadavid-numerical-semigroup-realizability"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:velez-cadavid-numerical-semigroup-realizability:2:s3",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "8acf7efa41af7fc9ddbbd39571e7ef73462f4509",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/8acf7efa41af7fc9ddbbd39571e7ef73462f4509/D5/S3/Arith/Additive/NumericalSemigroupRealizability.lean"
+      },
+      "lineage": "collected:velez-cadavid-numerical-semigroup-realizability:s3",
+      "macros": {
+        "\\N": "\\mathbb N",
+        "\\gen": "\\langle #1\\rangle"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "velez-cadavid-numerical-semigroup-realizability",
+      "scope": "in_scope",
+      "statement": "For any finite nonempty positive generating set $G$ of $T$, every\n$M\\ge\\max\\{c,\\max G\\}$ is admissible, with realization\n\\[\n S_M=\\{M\\}\\cup\\{M-h:h\\in G,\\ h<M\\},\\qquad\n |S_M|=1+|G|-\\mathbf1_{\\{M\\in G\\}}.\n\\]\nIn particular every numerical semigroup is realizable, and every\n$M\\ge\\max\\{1,c+m-1\\}$ is admissible. The least admissible maximum\ncan be found by testing \\eqref{eq:criterion} for\n$1\\le M\\le\\max\\{1,c+m-1\\}$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Vélez Caicedo and Cadavid's numerical-semigroup realizability question: prescribed maxima and reduced spectral data",
+      "toolchain": null,
+      "version": 2,
+      "work": "velez-cadavid-numerical-semigroup-realizability"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:velez-cadavid-numerical-semigroup-realizability:2:s4",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "8acf7efa41af7fc9ddbbd39571e7ef73462f4509",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/8acf7efa41af7fc9ddbbd39571e7ef73462f4509/D5/S3/Arith/Additive/NumericalSemigroupRealizability.lean"
+      },
+      "lineage": "collected:velez-cadavid-numerical-semigroup-realizability:s4",
+      "macros": {
+        "\\N": "\\mathbb N",
+        "\\gen": "\\langle #1\\rangle"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "velez-cadavid-numerical-semigroup-realizability",
+      "scope": "in_scope",
+      "statement": "For $T_m=\\{0\\}\\cup\\{m,m+1,\\ldots\\}$, $m\\ge1$, the admissible maxima\nare exactly\n\\[\n M\\ge \\left\\lceil\\frac{3m-1}{2}\\right\\rceil.\n\\]",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Vélez Caicedo and Cadavid's numerical-semigroup realizability question: prescribed maxima and reduced spectral data",
+      "toolchain": null,
+      "version": 2,
+      "work": "velez-cadavid-numerical-semigroup-realizability"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:velez-cadavid-numerical-semigroup-realizability:2:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "8acf7efa41af7fc9ddbbd39571e7ef73462f4509",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/8acf7efa41af7fc9ddbbd39571e7ef73462f4509/D5/S3/Arith/Additive/NumericalSemigroupRealizability.lean"
+      },
+      "lineage": "collected:velez-cadavid-numerical-semigroup-realizability:s5",
+      "macros": {
+        "\\N": "\\mathbb N",
+        "\\gen": "\\langle #1\\rangle"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "velez-cadavid-numerical-semigroup-realizability",
+      "scope": "in_scope",
+      "statement": "If $M\\ge2$, two global dimensions at $D,D+2$ and the $M-2$ dimensions\nrestricted to $n\\equiv-t\\pmod M$, $1\\le t\\le M-2$, at degree $D$\ndetermine $M$ and $\\Sigma_S$. All degrees must lie in the source's\ncommon stable range.\nIf $M=1$, then $\\Sigma_S=\\N$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Vélez Caicedo and Cadavid's numerical-semigroup realizability question: prescribed maxima and reduced spectral data",
+      "toolchain": null,
+      "version": 2,
+      "work": "velez-cadavid-numerical-semigroup-realizability"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s6",
+      "contributor": null,
+      "identity": "collected:velez-cadavid-numerical-semigroup-realizability:2:s6",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "8acf7efa41af7fc9ddbbd39571e7ef73462f4509",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/8acf7efa41af7fc9ddbbd39571e7ef73462f4509/D5/S3/Arith/Additive/NumericalSemigroupRealizability.lean"
+      },
+      "lineage": "collected:velez-cadavid-numerical-semigroup-realizability:s6",
+      "macros": {
+        "\\N": "\\mathbb N",
+        "\\gen": "\\langle #1\\rangle"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "velez-cadavid-numerical-semigroup-realizability",
+      "scope": "in_scope",
+      "statement": "For every prime maximum $M\\ge5$, eventual dimensions at all moduli\nproperly dividing $M$, even together with the eventual global dimensions,\nneed not distinguish defect semigroups.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Vélez Caicedo and Cadavid's numerical-semigroup realizability question: prescribed maxima and reduced spectral data",
+      "toolchain": null,
+      "version": 2,
+      "work": "velez-cadavid-numerical-semigroup-realizability"
+    }
+  ]
+}

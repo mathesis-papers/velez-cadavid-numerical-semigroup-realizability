@@ -1,0 +1,15 @@
+{
+  "id": "velez-cadavid-numerical-semigroup-realizability",
+  "revision": 2,
+  "problem_ids": ["velez-cadavid-2026-numerical-semigroup-realizability"],
+  "topic": "Numerical-semigroup realization with prescribed maximum jumps and fewer eventual spectral dimensions",
+  "title": "Vélez Caicedo and Cadavid's numerical-semigroup realizability question: prescribed maxima and reduced spectral data",
+  "creators": [
+    {"name": "Ma, Haobo", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Zhang, Wenlin", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "We answer the realizability question of Vélez Caicedo and Cadavid (§5, p. 17, second paragraph of arXiv:2611.14316v1) by reflecting semigroup generators about a prescribed maximum jump: every numerical semigroup T is realizable, and a positive integer M is an admissible maximum exactly when M belongs to T and every minimal generator h satisfies h<2M and 2M-h belongs to T. The construction gives the unique inclusion-minimal jump set at each admissible maximum and realizes every sufficiently large maximum. Using the source's spectral formulas, we also recover the semigroup from two global dimensions and M-2 restricted dimensions when M>=2. For prime maxima, eventual dimensions at proper-divisor moduli alone need not distinguish semigroups.",
+  "summary": "For minimal generators H, the necessary and sufficient condition at maximum M is M in T and, for every h in H, h<2M and 2M-h in T. The forced smallest realization is {M} union {|M-h|:h in H,h!=M}. Every M>=max(1,c+m-1) is admissible. For ordinary semigroups {0} union [m,infinity), the least maximum is ceil((3m-1)/2). Two stable global dimensions and M-2 residue-restricted dimensions suffice for reconstruction; proper-divisor data are insufficient in general. The existential realization statement is the scope of the linked Lean declaration; the extensions have written proofs and exact finite checks.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/8acf7efa41af7fc9ddbbd39571e7ef73462f4509/D5/S3/Arith/Additive/NumericalSemigroupRealizability.lean"
+}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, cite it."
+title: "Vélez Caicedo and Cadavid's numerical-semigroup realizability question: prescribed maxima and reduced spectral data"
+authors:
+  - name: "Haobo Ma"
+  - name: "Wenlin Zhang"
+date-released: "2026-11-21"
+version: "2"
+url: "https://mathesis-omega-research.apps.chrono-ai.fun/papers/velez-cadavid-numerical-semigroup-realizability?version=2"
+license: "CC-BY-4.0"

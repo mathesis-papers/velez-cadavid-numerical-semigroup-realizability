@@ -1,0 +1,306 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\N}{\mathbb N}
+\newcommand{\gen}[1]{\langle #1\rangle}
+\title{V\'elez Caicedo and Cadavid's numerical-semigroup realizability question:\\prescribed maxima and reduced spectral data}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\\small ChronoAI Pte Ltd, Singapore}
+\date{November 18, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We answer the realizability question of V\'elez Caicedo and Cadavid
+(\cite[\S5, p.~17, second paragraph]{VC}, arXiv:2611.14316v1) by reflecting
+semigroup generators about a prescribed maximum jump: every numerical
+semigroup $T$ is realizable, and a positive integer $M$ is an admissible maximum
+exactly when $M\in T$ and every minimal generator $h$ satisfies
+$h<2M$ and $2M-h\in T$.
+The construction gives the unique inclusion-minimal jump set at each
+admissible maximum and realizes every sufficiently large maximum.
+Using the source's spectral formulas, we also recover the semigroup from
+two global dimensions and $M-2$ restricted dimensions when $M\ge2$.
+For prime maxima, eventual dimensions at proper-divisor moduli alone need
+not distinguish semigroups.
+\end{abstract}
+
+\section{The question and its arithmetic form}
+We use $\N=\{0,1,2,\ldots\}$. A numerical semigroup is an additive submonoid
+$T\subseteq\N$ with finite complement, including $T=\N$.
+For $A\subseteq\N$, $\gen A$ is the monoid of finite nonnegative integer
+linear combinations of elements of $A$, including the empty sum $0$.
+These are the conventions of \cite{RG}; all arithmetic facts needed below
+are proved here.
+
+For a finite nonempty positive jump set $S$, put $M=\max S$ and
+\[
+ \Sigma_S=\gen{\{M\}\cup\{M-s:s\in S\}\cup\{M+s:s\in S\}}.
+\]
+V\'elez Caicedo and Cadavid study this semigroup through the filtered
+spectral dimensions of circulant graphs of orders $n>2M$.
+Their final discussion asks which numerical semigroups occur, whether
+fewer congruence restrictions suffice to distinguish them, and which
+spectral data reconstruction requires \cite[\S5, p.~17]{VC}.
+We call $M$ \emph{admissible for $T$} if $\Sigma_S=T$ for some such $S$
+with $\gcd S=1$ and maximum $M$.
+The source leaves $M$ free. The prescribed-maximum criterion below
+strengthens its existential question; the reconstruction consequences use
+its already proved dimension formulas.
+The quotient-genus identities of Adeniran et al.\ \cite[Theorem 1.3]{AB}
+concern quotients of a given numerical semigroup. Here the arithmetic
+construction instead starts from an arbitrary target semigroup and
+prescribes the maximum of a realizing jump set.
+
+Let $c$ be the conductor of $T$, the least nonnegative integer for which
+$c+\N\subseteq T$, and let $m$ be its least positive member.
+Thus $c=0$ exactly when $T=\N$.
+A positive element of $T$ is \emph{indecomposable} if it is not a sum of
+two positive elements of $T$.
+
+\begin{lemma}\label{lem:generators}
+The indecomposable elements form the unique minimal positive generating
+set $H$ of $T$. This set is finite, nonempty, has $\gcd H=1$, and
+\[
+ \max H\le\max\{m,c+m-1\}.
+\]
+\end{lemma}
+\begin{proof}
+Every $x\in T$ with $x\ge c+m$ and $x>m$ decomposes as
+$m+(x-m)$, with $x-m\in T$ positive. Thus an indecomposable is either
+$m$ or is smaller than $c+m$, proving the bound and finiteness.
+The element $m$ is indecomposable. Strong induction on a positive
+$x\in T$ expresses it using indecomposables: either it is one, or it
+splits into two smaller positive elements to which induction applies.
+Conversely every positive generating set must contain each indecomposable,
+since an expression for it can have only one positive summand.
+This proves minimality and uniqueness.
+Finally, a divisor common to $H$ divides all of $T$, hence divides the
+consecutive positive members $c+1$ and $c+2$, and is one.
+\end{proof}
+
+\section{Prescribed maxima and the smallest jump set}
+\begin{theorem}\label{thm:criterion}
+Let $H$ be the minimal positive generating set of a numerical semigroup
+$T$. A positive integer $M$ is admissible for $T$ if and only if
+\begin{equation}\label{eq:criterion}
+ M\in T,\qquad h<2M\ \hbox{and}\ 2M-h\in T\quad(h\in H).
+\end{equation}
+When these conditions hold, the set
+\begin{equation}\label{eq:minimal}
+ S_{\min}(T,M)=\{M\}\cup\{|M-h|:h\in H,\ h\ne M\}
+\end{equation}
+realizes $T$, has gcd one, and is contained in every jump set realizing
+$T$ with maximum $M$. It is therefore the unique inclusion-minimal such
+set and has the smallest possible number of jumps.
+\end{theorem}
+\begin{proof}
+Suppose $\Sigma_S=T$ with maximum $M$. The defining generators of
+$\Sigma_S$ belong to $T$, in particular $M\in T$.
+An indecomposable $h\in H$ must itself be one of the nonzero defining
+generators: an expression with two positive summands would decompose it.
+It cannot be $2M$, which is $M+M$. Thus either $h=M$, or
+$h=M-s$ or $h=M+s$ for some $s\in S$ with $0<s<M$.
+In the latter cases the paired generator $2M-h=M+s$ or $M-s$
+also belongs to $T$, and $h<2M$. For $h=M$ the same conditions hold.
+Moreover $|M-h|=s\in S$ whenever $h\ne M$. Since also $M\in S$,
+this proves both necessity and the asserted containment.
+
+Conversely assume \eqref{eq:criterion}. Each jump $|M-h|$ with $h\ne M$
+is positive and smaller than $M$, so \eqref{eq:minimal} has maximum $M$.
+Its defect generators are $M,0,2M$ and the pairs
+$\{h,2M-h\}$ for $h\in H\setminus\{M\}$.
+They all belong to $T$, and they contain every member of $H$,
+with $h=M$ supplied by $M$ itself. Their generated monoid is therefore $T$.
+If a positive integer $d$ divides all jumps, it divides $M$ and
+each $|M-h|$, hence every $h\in H$; Lemma~\ref{lem:generators} gives $d=1$.
+The already proved containment gives minimality and uniqueness.
+\end{proof}
+
+\begin{corollary}[All sufficiently large maxima]\label{cor:large}
+For any finite nonempty positive generating set $G$ of $T$, every
+$M\ge\max\{c,\max G\}$ is admissible, with realization
+\[
+ S_M=\{M\}\cup\{M-h:h\in G,\ h<M\},\qquad
+ |S_M|=1+|G|-\mathbf1_{\{M\in G\}}.
+\]
+In particular every numerical semigroup is realizable, and every
+$M\ge\max\{1,c+m-1\}$ is admissible. The least admissible maximum
+can be found by testing \eqref{eq:criterion} for
+$1\le M\le\max\{1,c+m-1\}$.
+\end{corollary}
+\begin{proof}
+Here $M\in T$. For $h<M$ the paired generator $2M-h$ is larger than
+$M\ge c$, hence in $T$. The defect generators of $S_M$ lie in $T$ and
+contain $G$, proving equality; the gcd argument in the theorem applies
+because every positive generating set has gcd one by the final argument
+of Lemma~\ref{lem:generators}. Reflection is injective and never gives $M$,
+which proves the count. For the final bound use $G=H$ and the lemma.
+If $c>0$, then $c\ge1$ and $c+m-1\ge m,c$; if $c=0$, then
+$T=\N$, $m=1$, $H=\{1\}$ and $S=\{1\}$ works at $M=1$.
+\end{proof}
+
+\begin{corollary}[Ordinary semigroups]\label{cor:ordinary}
+For $T_m=\{0\}\cup\{m,m+1,\ldots\}$, $m\ge1$, the admissible maxima
+are exactly
+\[
+ M\ge \left\lceil\frac{3m-1}{2}\right\rceil.
+\]
+\end{corollary}
+\begin{proof}
+The minimal generators are $m,\ldots,2m-1$. An admissible $M$ belongs
+to $T_m$, so $M\ge m$ and every $2M-h$ in the criterion is positive.
+It belongs to $T_m$ exactly when it is at least $m$.
+The strongest of these inequalities is
+$2M-(2m-1)\ge m$, equivalent to the displayed bound.
+Conversely this bound implies $M\ge m$, $h<2M$ and $2M-h\ge m$
+for every minimal generator, so Theorem~\ref{thm:criterion} applies.
+\end{proof}
+
+For example, $T=\gen{3,5}$ has conductor $8$ and least admissible
+maximum $8$, where $S_{\min}=\{3,5,8\}$. To check minimality, the only
+positive members of $T$ below $8$ are $3,5,6$: the criterion fails on
+$h=5,3,5$, respectively, whose partners are $1,7,7\notin T$.
+At $M=8$ both partners, $13$ and $11$, lie in $T$.
+For $T=\N$, every $M\ge1$ works: the smallest jump set is $\{1\}$
+at $M=1$ and $\{M-1,M\}$ otherwise.
+
+\section{Fewer eventual spectral dimensions}
+For clarity we retain the source's spectral conventions.
+Let $A_{n,S}$ be the adjacency matrix of the undirected circulant graph
+with jumps $\{\pm s:s\in S\}$ on $\mathbb Z/n\mathbb Z$, $n>2M$,
+and put $r=|S|$ and
+$G_h(n)=2^{-h}\operatorname{tr}(A_{n,S}^h)-r^h$ for $h\ge1$.
+The algebra $\mathcal A_S=\mathbb Q[G_1,G_2,\ldots]$ is filtered by assigning
+weight $h$ to $G_h$. Write $\rho^{\mathrm{glob}}_S(D)$ for the dimension
+of its weight-at-most-$D$ part and $\rho_{S;q,a}(D)$ for the dimension
+after restricting graph orders to $n\equiv a\pmod q$.
+For $T=\Sigma_S$, let $g$ be the number of gaps and
+$g_t=|\{v\in\N\setminus T:v\equiv t\pmod M\}|$.
+The source proves that, at a common sufficiently large degree $D$,
+\begin{align}
+ \rho^{\mathrm{glob}}_S(D)&=MD+\lfloor D/2\rfloor+1-M(M+1)-g,
+       \label{eq:global}\\
+ \rho_{S;M,-t\bmod M}(D)&=D+\lfloor D/2\rfloor-1-g_t
+       \quad(0\le t<M).
+       \label{eq:restricted}
+\end{align}
+These are cited formulas, not additional spectral theorems proved here
+\cite[Theorems 1.1--1.3, Corollaries 3.9--3.10]{VC}.
+
+\begin{corollary}\label{cor:spectral}
+If $M\ge2$, two global dimensions at $D,D+2$ and the $M-2$ dimensions
+restricted to $n\equiv-t\pmod M$, $1\le t\le M-2$, at degree $D$
+determine $M$ and $\Sigma_S$. All degrees must lie in the source's
+common stable range.
+If $M=1$, then $\Sigma_S=\N$.
+\end{corollary}
+\begin{proof}
+First recover $M=(\rho^{\mathrm{glob}}_S(D+2)-\rho^{\mathrm{glob}}_S(D)-1)/2$
+and then $g$ from \eqref{eq:global}.
+Since $M\in T$, its nonnegative multiples belong to $T$, so $g_0=0$.
+Equation~\eqref{eq:restricted} recovers $g_1,\ldots,g_{M-2}$ and
+$g_{M-1}=g-\sum_{t=1}^{M-2}g_t$ supplies the remaining count.
+Let $w_t$ be the least member of $T$ congruent to $t$ modulo $M$.
+Such a member exists by cofiniteness. Closure under addition of $M$
+shows that the gaps in this class are precisely
+$t,t+M,\ldots,w_t-M$, whence $w_t=t+Mg_t$.
+Thus $T=\bigcup_{t=0}^{M-1}(w_t+M\N)$ is determined.
+For $M=2$ the list of restricted values is empty and the same argument
+applies. For $M=1$, $1\in T$ gives $T=\N$.
+\end{proof}
+
+\begin{corollary}\label{cor:obstruction}
+For every prime maximum $M\ge5$, eventual dimensions at all moduli
+properly dividing $M$, even together with the eventual global dimensions,
+need not distinguish defect semigroups.
+\end{corollary}
+\begin{proof}
+Take $T_1=\N\setminus\{1,2\}=\gen{3,4,5}$ and
+$T_2=\N\setminus\{1,3\}=\gen{2,5}$.
+Their conductors are $3,4$, respectively. Both are realizable at every
+$M\ge5$ by Corollary~\ref{cor:large}, and both have genus $2$.
+The only positive proper divisor of prime $M$ is $1$, for which the
+restriction is the unrestricted sequence. Formula~\eqref{eq:global}
+therefore makes all these eventual dimension data identical, although
+$T_1\ne T_2$.
+\end{proof}
+This obstruction concerns eventual dimensions at divisor moduli, not
+the complete low-degree filtration or arbitrary nondivisor moduli.
+Corollary~\ref{cor:spectral} is a sufficient smaller family, not a proof
+that $M-2$ restrictions are always necessary.
+
+\section{Coverage and verification}
+The source poses questions rather than an assertion of nonrealizability.
+The following separates its questions from the additional consequences.
+\begin{center}
+\small
+\begin{tabular}{@{}p{0.43\linewidth}p{0.49\linewidth}@{}}
+\toprule
+Source item in \cite{VC} & Coverage\\
+\midrule
+\S5, p.~17, paragraph 2: realizability & Answered: yes, for every numerical
+semigroup (Corollary~\ref{cor:large}).\\[3pt]
+Same paragraph: smaller sufficient congruence families & Answered: yes
+for eventual data, using two global values and $M-2$ restricted values
+(Corollary~\ref{cor:spectral}).\\[3pt]
+Same paragraph: necessary reconstruction data & Partial: proper-divisor
+moduli can fail (Corollary~\ref{cor:obstruction}); a full minimal-data
+classification is not covered.\\[3pt]
+Prescribed maxima and smallest jump sets & Not posed; proved in
+Theorem~\ref{thm:criterion}.\\[3pt]
+Ordinary semigroups' least maximum & Not posed; proved in
+Corollary~\ref{cor:ordinary}.\\[3pt]
+Corollary 3.10: jump-set nonuniqueness & Prior result cited; the unique
+minimal set here is for prescribed $T,M$, not uniqueness of every realization.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The existential realization statement, including $T=\N$, is the scope of
+\texttt{D5.S3.Arith.Additive.}\allowbreak
+\texttt{NumericalSemigroupRealizability.result} in the
+\href{https://github.com/the-omega-institute/trureturing/blob/8acf7efa41af7fc9ddbbd39571e7ef73462f4509/D5/S3/Arith/Additive/NumericalSemigroupRealizability.lean}{commit-pinned Lean file}.
+For a cofinite additive submonoid of $\N$, this declaration gives a
+positive $M$ and a finite nonempty positive set $S$ with maximum $M$,
+gcd one, and generated monoid equal to $T$.
+The prescribed-maximum criterion, minimality, quantitative bounds and
+spectral consequences have the written proofs above; the spectral input
+is precisely \eqref{eq:global}--\eqref{eq:restricted} from \cite{VC}.
+
+The accompanying \texttt{verify.py} checks exact finite instances of the
+construction, fixed-maximum criterion, minimality and residue-count
+reconstruction. It enumerates numerical semigroups by their finite gap
+sets and also enumerates positive primitive jump sets at bounded maxima.
+Equality is compared using complete least-residue representative lists,
+not just an initial segment. Exact ranges and outputs are in
+\texttt{verification.json}; these finite calculations complement the
+general written proofs.
+
+\begin{thebibliography}{9}
+\bibitem{AB}
+A.~Adeniran, S.~Butler, C.~Defant, Y.~Gao, P.~E.~Harris, C.~Hettle,
+Q.~Liang, H.~Nam and A.~Volk,
+\emph{On the genus of a quotient of a numerical semigroup},
+Semigroup Forum \textbf{98} (2019), 690--700;
+arXiv:1809.09360v2, 24 November 2018.
+\url{https://doi.org/10.1007/s00233-018-9989-3}.
+\bibitem{VC}
+J.~D. V\'elez Caicedo and C.~A. Cadavid,
+\emph{Reconstructing Numerical Semigroups from Circulant Spectral Dimensions},
+arXiv:2611.14316v1, 10 November 2026.
+\url{https://arxiv.org/abs/2611.14316v1}.
+\bibitem{RG}
+J.~C. Rosales and P.~A. Garc\'ia-S\'anchez,
+\emph{Numerical Semigroups}, Developments in Mathematics, vol.~20,
+Springer, 2009.
+\url{https://doi.org/10.1007/978-1-4419-0160-6}.
+\end{thebibliography}
+\medskip\noindent\small
+\copyright\ 2026 Haobo Ma and Wenlin Zhang.
+Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+\end{document}

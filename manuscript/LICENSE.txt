@@ -1,0 +1,10 @@
+Copyright 2026 Haobo Ma and Wenlin Zhang.
+
+This work is licensed under the Creative Commons Attribution 4.0 International
+License (CC BY 4.0; SPDX: CC-BY-4.0).
+
+To view the full license, visit
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution: Haobo Ma (ChronoAI Pte Ltd, Singapore), then Wenlin Zhang
+(National University of Singapore; ChronoAI Pte Ltd, Singapore).
