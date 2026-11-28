@@ -31,6 +31,7 @@
     "concept_doi": "10.5281/zenodo.24404957",
     "current_version": 2,
     "doi": "10.5281/zenodo.24404958",
+    "kind": "note",
     "lean_source": {
       "revision": "8acf7efa41af7fc9ddbbd39571e7ef73462f4509",
       "url": "https://github.com/the-omega-institute/trureturing/blob/8acf7efa41af7fc9ddbbd39571e7ef73462f4509/D5/S3/Arith/Additive/NumericalSemigroupRealizability.lean"
@@ -55,10 +56,12 @@
     "title": "Vélez Caicedo and Cadavid's numerical-semigroup realizability question: prescribed maxima and reduced spectral data",
     "versions": [
       {
+        "changelog": null,
         "previous_version": null,
         "published_on": "2026-11-21T11:28:59.304714016Z",
         "revision": "2",
-        "version": 2
+        "version": 2,
+        "version_label": null
       }
     ],
     "work": "velez-cadavid-numerical-semigroup-realizability"
